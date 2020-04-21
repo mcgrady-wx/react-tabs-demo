@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Tabs from './components/Tabs'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     		<Tabs>
+     			<tab name="新款">
+     				<div>
+     					<p>最新款</p>
+     					<p>价格最高</p>
+     				</div>
+     			</tab>
+     			<tab name="旧款">
+     				<div>
+     					<p>旧款设计</p>
+     					<p>价格相对优惠</p>
+     				</div>
+     			</tab>
+     			<tab name="二手">
+     				<div>
+     					<p>翻新二手</p>
+     					<p>价格最便宜</p>
+     				</div>
+     			</tab>
+     		</Tabs>
     </div>
   );
 }
